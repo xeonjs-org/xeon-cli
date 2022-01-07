@@ -1,5 +1,5 @@
 # Xeon-cli
-### A Command Line Interface For [Xeon Js](https://github.com/chatcord/XeonJS).
+### A Command Line Interface For [Xeon Js](https://github.com/xeonjs-org/XeonJS).
 Xeon cli is a very powerfull tool to create xeon project. 
 ### *__Features :__* 
 * Create Xeon Project very easily at any directory with a single line code.

@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+/**
+ * Copyright (c) 2021-present, ChatCord, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+require = require('esm')(module /*, options*/);
+const chalk = require('chalk');
+const path = require("path");
+
+const args = process.argv.slice(2);
+if (args[0] === "create-app") {
+      require('../src/createApp/createApp').cli(process.argv);
+} else if (args[0] === "-v" || args[0] === "--version") {
+      console.log(chalk.cyanBright.bold("Xeon-cli :", require(path.join(__dirname, "../package.json")).version));
+}
